@@ -1,0 +1,17 @@
+body {
+  font: 1em/1.5 Helvetica, Arial, sans-serif;
+  color: #999; }
+
+.large-text {
+  font-size: 200%; }
+
+.small-text {
+  font-size: 75%; }
+
+blockquote {
+  padding: 1.5em;
+  margin: 3em; }
+  blockquote cite:before {
+    content: "- "; }
+
+/*# sourceMappingURL=exercise-7.css.map */

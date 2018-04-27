@@ -1,0 +1,146 @@
+.topnavul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+.topnav {
+    background-color: blueviolet;
+}
+
+.topnavlidropdown {
+    position: relative;
+    display: inline-block;
+    background-color: crimson;
+}
+
+.topnavlidropdownul {
+    display: none;
+    position: absolute;
+}
+
+.topnavlidropdown:hover .topnavlidropdownul {
+    display: block;
+    background-color: crimson;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.topnavli{
+    text-decoration: none;
+    background-color: crimson;
+}
+
+.topheader {
+    background-color: cadetblue;
+}
+
+.topheaderimg1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.leftnavul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.leftnav {
+   padding-right: 15px;
+    background-color: blue;
+    flex: 1;
+}
+
+main {
+    flex: 6;
+    background-color: deepskyblue;
+}
+
+.mainarticle {
+    width: 45%;
+    background-color: gold;
+}
+
+.mainsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.mainheader {
+    background-color: darkblue;
+}
+
+.mainfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    background-color: darkgreen;
+}
+
+.bottomfooter {
+    /* width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    background-color: limegreen;
+}
+
+.bottomfooterlinks {
+    background-color: chocolate;
+}
+
+.bottomfooterimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    background-color: tomato;
+}
+
+.bottomfootercontact {
+    background-color: darkmagenta;
+}
+
+.bottomfooterimage {
+    width: 50%;
+}
+
+.bottomfooterlinks, .bottomfootercontact, .bottomfooterimages {
+   /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    /* width: 33%; */
+    flex: 1;
+}

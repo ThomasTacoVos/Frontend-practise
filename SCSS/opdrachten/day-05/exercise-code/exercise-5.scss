@@ -1,0 +1,32 @@
+
+
+
+$font-family: Helvetica, Arial, sans-serif;
+
+$font-size: 1em;
+$line-height: 1.5;
+
+$color-1: #89C3AB;
+$color-2: #686868;
+
+$btn-name-1: "primary";
+$btn-name-2: "default";
+
+body {
+  font: #{$font-size}/#{-height} $font-family;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5em 1em;
+
+  &-#{$btn-name-1} {
+    background-color: $color-1;
+    color: #fff;
+  }
+
+  &-#{$btn-name-2} {
+    background-color: $color-2;
+    color: #fff;
+  }
+}

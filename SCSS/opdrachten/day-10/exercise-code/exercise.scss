@@ -1,0 +1,95 @@
+/* Day 10 Exercise
+ *
+ * This is a .css file.
+ *
+ * Your assignment is to write the corresponding .scss file while respecting a few rules.
+ * 1. You need to use variables wherever you see fit.
+ * 2. You need to use at least two maps.
+ * 3. You need to nest @media rules at least once.
+ * 4. You must use the * (multiplication) operator at least twice.
+ *
+ * In the end, compare it with the result from the /exercise-answer folder.
+ * Good luck! */
+
+
+
+$breakpoints: (
+        mobile: 480px,
+        tablet: 768px,
+        desktop: 1280px
+);
+
+$font-increments: (
+        mobile: 1.4,
+        tablet: 1.2
+);
+
+$default-bg: #fff;
+$boxed-body-bg: #eaeaea;
+$boxed-container-bg: #fff;
+$boxed-container-border: #d1d1d1;
+
+$font-family: "Helvetica", Arial, sans-serif;
+$base-font-size: 1em;
+$line-height: 1.5;
+$baseline: $base-font-size * $line-height;
+
+$content-width: 90%;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font: #{$base-font-size}/#{$line-height} $font-family;
+
+    &.boxed-layout {
+        background-color: $boxed-body-bg;
+    }
+
+    @media all and (max-width: map-get($breakpoints, mobile)) {
+        font-size: $base-font-size * map-get($font-increments, mobile);
+        background-color: $default-bg;
+    }
+
+    @media all and (min-width: map-get($breakpoints, tablet)) {
+        @media (max-width: map-get($breakpoints, desktop)) {
+            font-size: $base-font-size * map-get($font-increments, tablet);
+        }
+    }
+}
+
+p {
+    margin-bottom: $baseline;
+}
+
+.container {
+    width: $content-width;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .boxed-layout & {
+        @media all and (min-width: map-get($breakpoints, tablet)) {
+            background-color: $boxed-container-bg;
+            border: 1px solid $boxed-container-border;
+            border-width: 0 1px;
+            padding: $baseline * 2;
+        }
+    }
+}
+
+.col-half {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    padding: $baseline * 2;
+
+    @media all and (max-width: map-get($breakpoints, mobile)) {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}

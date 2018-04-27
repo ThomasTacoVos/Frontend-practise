@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAcA,IAAK;EACH,IAAI,EAAE,oCAA4I;EAClJ,KAAK,EAVa,IAAI;;AAaxB,WAAY;EACV,SAAS,EAAE,IAAgD;;AAG7D,WAAY;EACV,SAAS,EAAE,GAAgD;;AAG7D,UAAW;EACT,OAAO,EAhBE,KAA+D;EAiBxE,MAAM,EAAE,GAAqB;EAG3B,sBAAS;IACP,OAAO,EA1BQ,IAAI",
+"sources": ["exercise-7.scss"],
+"names": [],
+"file": "exercise-7.css"
+}

@@ -1,0 +1,14 @@
+body {
+  font: 1em/-height Helvetica, Arial, sans-serif; }
+
+.btn {
+  display: inline-block;
+  padding: .5em 1em; }
+  .btn-primary {
+    background-color: #89C3AB;
+    color: #fff; }
+  .btn-default {
+    background-color: #686868;
+    color: #fff; }
+
+/*# sourceMappingURL=exercise-5.css.map */
